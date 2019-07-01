@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_default">#eee</color>
+
+    <color name="colorPrimary">#ff5722</color>
+    <color name="colorPrimaryDark">#b23c17</color>
+    <color name="colorAccent">#b23c17</color>
+
+    <color name="button_decode">#4caf50</color>
+    <color name="button_clear">#f44336</color>
+    <color name="button_play">#ffca28</color>
+    <color name="button_stop">#ffd453</color>
+</resources>

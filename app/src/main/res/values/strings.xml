@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Alpha Morser</string>
+
+    <string name="button_play">Play</string>
+    <string name="button_stop">Stop</string>
+    <string name="button_decode">Decode</string>
+    <string name="button_clear">Clear</string>
+
+    <string name="hint_input">Type your message here</string>
+
+    <string name="activity_help">Help</string>
+    <string name="info_text">
+        This application translates text to morse code and vice versa.
+        Only letters from A-Ö (A-Z) and numbers are accepted.
+        When typing morse code, use \'.\' for dot, \'-\' for dash and \'/\' for space.
+    </string>
+</resources>

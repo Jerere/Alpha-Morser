@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <EditText
+            android:id="@+id/input_main"
+            android:layout_width="@dimen/width_default"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:hint="@string/hint_input"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="@dimen/margin_default"/>
+
+    <LinearLayout
+            android:id="@+id/linearlayoyt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/input_main"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/margin_default"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/button_translate"
+                android:layout_width="@dimen/decode_button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/button_decode"
+                android:textStyle="bold"
+                android:drawableEnd="@drawable/decode_24dp"
+                android:theme="@style/button_decode"
+                android:onClick="getInput"/>
+
+        <Button
+                android:id="@+id/button_clear"
+                android:layout_width="@dimen/clear_button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/button_clear"
+                android:drawableEnd="@drawable/clear_24dp"
+                android:theme="@style/button_clear"
+                android:onClick="clear"/>
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/text_result"
+            android:layout_width="@dimen/width_default"
+            android:layout_height="@dimen/height_default_half"
+            app:layout_constraintTop_toBottomOf="@id/linearlayoyt_1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="@dimen/textsize_default"
+            android:enabled="true"
+            android:textIsSelectable="true"
+            android:focusable="true"
+            android:longClickable="true"
+            android:background="@drawable/textview_border"
+            android:layout_marginTop="60dp"/>
+
+    <LinearLayout
+            android:id="@+id/linearlayoyt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text_result"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/margin_default"
+            android:orientation="horizontal">
+
+    <Button
+            android:id="@+id/button_play"
+            android:layout_width="@dimen/audio_button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/button_play"
+            android:theme="@style/button_play"
+            android:drawableEnd="@drawable/play_24dp"/>
+
+    <Button
+            android:id="@+id/button_pause"
+            android:layout_width="@dimen/audio_button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/button_stop"
+            android:theme="@style/button_stop"
+            android:drawableEnd="@drawable/stop_24dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
