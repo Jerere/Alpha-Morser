@@ -8,6 +8,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/app_label</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_result">
+        <item name="android:textColor">#EEEEEE</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="text_input">
+        <item name="android:textSize">20sp</item>
+    </style>
+
     <style name="button_decode" parent="Theme.AppCompat.Light">
         <item name="colorControlHighlight">@color/color_default</item>
         <item name="colorButtonNormal">@color/button_decode</item>
@@ -16,16 +31,7 @@
     <style name="button_clear" parent="Theme.AppCompat.Light">
         <item name="colorControlHighlight">@color/color_default</item>
         <item name="colorButtonNormal">@color/button_clear</item>
-    </style>
 
-    <style name="button_play" parent="Theme.AppCompat.Light">
-        <item name="colorControlHighlight">@color/color_default</item>
-        <item name="colorButtonNormal">@color/button_play</item>
-    </style>
-
-    <style name="button_stop" parent="Theme.AppCompat.Light">
-        <item name="colorControlHighlight">@color/color_default</item>
-        <item name="colorButtonNormal">@color/button_stop</item>
     </style>
 
 </resources>

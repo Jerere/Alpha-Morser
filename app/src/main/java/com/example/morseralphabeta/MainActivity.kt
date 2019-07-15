@@ -7,13 +7,11 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 import android.view.Menu
 import android.view.MenuItem
 import kotlinx.coroutines.*
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -147,7 +145,6 @@ class MainActivity : AppCompatActivity() {
         } else if (mRegex.matches(inputx)) {
             return "morse"
         } else {
-            Toast.makeText(this@MainActivity, "Only letters or morse code", Toast.LENGTH_SHORT).show()
             return "falseinput"
         }
 
@@ -167,4 +164,3 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
-

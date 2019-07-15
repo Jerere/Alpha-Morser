@@ -10,12 +10,13 @@
 
     <dimen name="image_size">350dp</dimen>
 
-    <dimen name="textsize_default">24dp</dimen>
-    <dimen name="textsize_info">18dp</dimen>
-    <dimen name="textsize_button">16dp</dimen>
+    <dimen name="textsize_default">24sp</dimen>
+    <dimen name="textsize_info">18sp</dimen>
+    <dimen name="textsize_button">16sp</dimen>
 
     <dimen name="decode_button_width">200dp</dimen>
     <dimen name="button_height">50dp</dimen>
     <dimen name="clear_button_width">100dp</dimen>
-    <dimen name="audio_button_width">150dp</dimen>
+    <dimen name="audio_button_width">142dp</dimen>
+    <dimen name="audio_button_margin">4dp</dimen>
 </resources>

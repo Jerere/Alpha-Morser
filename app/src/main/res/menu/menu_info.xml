@@ -4,7 +4,6 @@
 
     <item
             android:id="@+id/info_menu"
-            android:title="Help"
+            android:title="@string/activity_help"
             app:showAsAction="ifRoom|withText"/>
-
 </menu>

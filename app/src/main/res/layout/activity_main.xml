@@ -5,8 +5,10 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".MainActivity">
-
+            tools:context=".MainActivity"
+            android:background="@drawable/back"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
 
 <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -21,6 +23,7 @@
             app:layout_constraintRight_toRightOf="parent"
             android:hint="@string/hint_input"
             android:inputType="textMultiLine"
+            android:theme="@style/text_input"
             android:layout_marginTop="@dimen/margin_default"/>
 
     <LinearLayout
@@ -63,9 +66,11 @@
             app:layout_constraintRight_toRightOf="parent"
             android:textSize="@dimen/textsize_default"
             android:enabled="true"
+            android:padding="4dp"
             android:textIsSelectable="true"
             android:focusable="true"
             android:longClickable="true"
+            android:theme="@style/text_result"
             android:background="@drawable/textview_border"
             android:layout_marginTop="60dp"/>
 
@@ -84,16 +89,20 @@
             android:layout_width="@dimen/audio_button_width"
             android:layout_height="@dimen/button_height"
             android:text="@string/button_play"
-            android:theme="@style/button_play"
-            android:drawableEnd="@drawable/play_24dp"/>
+            android:textColor="@color/app_text"
+            android:layout_margin="@dimen/audio_button_margin"
+            android:background="@color/button_audio_selector"
+            android:drawableEnd="@drawable/ic_play_arrow"/>
 
     <Button
             android:id="@+id/button_pause"
             android:layout_width="@dimen/audio_button_width"
             android:layout_height="@dimen/button_height"
             android:text="@string/button_stop"
-            android:theme="@style/button_stop"
-            android:drawableEnd="@drawable/stop_24dp"/>
+            android:textColor="@color/app_text"
+            android:layout_margin="@dimen/audio_button_margin"
+            android:background="@color/button_audio_selector"
+            android:drawableEnd="@drawable/ic_stop"/>
 
     </LinearLayout>
 
